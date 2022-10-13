@@ -1,0 +1,10 @@
+<p-menubar [model]="listMenu" (click)="activeMenu($event)" >
+  <ng-template pTemplate="start">
+    <img width="128" class="px-1" alt="brand logo" src="../../../assets/samsung-logo.png">
+  </ng-template>
+  <ng-template pTemplate="end">
+    <label>
+      <button type="button" pButton label="Logout" icon="pi pi-power-off" style="margin-left:.25em"></button>
+    </label>
+  </ng-template>
+</p-menubar>

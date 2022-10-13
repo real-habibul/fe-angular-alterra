@@ -1,0 +1,47 @@
+.carousel-item {
+  .carousel-item-content {
+    border: 1px solid var(--surface-d);
+    border-radius: 3px;
+    margin: .3rem;
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .carousel-image {
+    height: 500px;
+    // make image full width
+    width: 100%;
+    object-fit: contain;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+  }
+
+
+  .carousel-description {
+    color: brown;
+    margin-top: -10px;
+    z-index: 2;
+    margin-left: 25%;
+    margin-right: 25%;
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+.margin-left-1 {
+  margin-left: 8.3333%;
+  @media (max-width: 768px) {
+    margin-left: 8.3333%;
+    margin-right: 8.3333%;
+  }
+}
+
+.margin-right-1 {
+  margin-right: 8.3333%;
+  @media (max-width: 768px) {
+    margin-left: 8.3333%;
+    margin-right: 8.3333%;
+  }
+}

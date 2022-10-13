@@ -1,0 +1,36 @@
+<!-- <p>passanger works!</p> -->
+<div class="grid">
+  <div class="col-4">
+    <h3 class="text-center">{{ formPassangerTitle }}</h3>
+    <div class="card">
+      <div class="flex flex-column card-container green-container">
+        <div class="flex align-items-center justify-content-center m-1 py-2">
+          <span class="p-float-label">
+            <input id="in_id" type="text" [(ngModel)]="in_id" pInputText>
+            <label for="in_id">Your ID</label>
+          </span>
+        </div>
+        <div class="flex align-items-center justify-content-center m-1 py-2">
+          <span class="p-float-label">
+            <input id="in_nama" type="text" [(ngModel)]="in_nama" pInputText>
+            <label for="in_nama">Nama</label>
+          </span>
+        </div>
+        <div class="flex align-items-center justify-content-center m-1 py-2">
+          <span class="p-float-label">
+            <input id="in_kota" type="text" [(ngModel)]="in_kota" pInputText>
+            <label for="in_kota">Kota</label>
+          </span>
+        </div>
+        <div class="flex align-items-center justify-content-center m-2">
+          <button pButton type="button" label="Update" class="p-button-success" (click)="onEdit()" *ngIf="isEdit"></button>
+          <button pButton type="button" label="Submit" (click)="onSubmit()" *ngIf="!isEdit"></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-8">
+    <app-ptable (updateEvent)="onUpdate($event)" (prosesEdit)="dataFromChild($event)"></app-ptable>
+  </div>
+</div>

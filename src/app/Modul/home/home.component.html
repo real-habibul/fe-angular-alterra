@@ -1,0 +1,26 @@
+<p-carousel [value]="carouselImage" styleClass="custom-carousel" [numVisible]="1" [numScroll]="1" [circular]="true"
+  [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+  <ng-template let-carousel pTemplate="item">
+    <div class="carousel-item">
+      <div class="carousel-item-content">
+        <div class="image-carousel">
+          <img src="../../../assets/carousel/{{carousel.image}}" [alt]="carousel.name" class="carousel-image" />
+          <div class="carousel-description flex flex-column justify-content-center align-items-center">
+            <h4>{{carousel.name}}</h4>
+            <span>{{carousel.description}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>
+<div class="grid">
+  <div class="lg:col-5 md:col-5 margin-left-1">
+    <h3>Judul Lorem</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsum deserunt laboriosam mollitia velit sed vitae beatae tempora aspernatur, eum, ea temporibus, doloremque consectetur vel soluta ipsam? Nisi quam numquam velit porro dolore culpa iure rem hic magnam, minus doloremque repellendus dolorum veniam enim inventore, ab nobis ad accusamus fugiat. Voluptatum, quis? Eveniet, consequatur quam?</p>
+  </div>
+  <div class="lg:col-5 md:col-5 margin-right-1">
+    <h3>Judul Lorem</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsum deserunt laboriosam mollitia velit sed vitae beatae tempora aspernatur, eum, ea temporibus, doloremque consectetur vel soluta ipsam? Nisi quam numquam velit porro dolore culpa iure rem hic magnam, minus doloremque repellendus dolorum veniam enim inventore, ab nobis ad accusamus fugiat. Voluptatum, quis? Eveniet, consequatur quam?</p>
+  </div>
+</div>

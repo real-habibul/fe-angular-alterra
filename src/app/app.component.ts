@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-crud';
+  // title:string = 'ang-routing';
+
+  // data = [
+  //   {id: 1, nama: 'Andi', kota: 'Jakarta'},
+  //   {id: 2, nama: 'Budi', kota: 'Bandung'},
+  //   {id: 3, nama: 'Caca', kota: 'Surabaya'},
+  // ];
 }

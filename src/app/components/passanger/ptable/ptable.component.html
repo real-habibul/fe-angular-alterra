@@ -1,0 +1,23 @@
+<h3 class="text-center">Data Passanger</h3>
+<p-table [value]="listArray" responsiveLayout="scroll">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>ID</th>
+      <th>Nama</th>
+      <th>Kota</th>
+      <th>Action</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-item>
+    <tr>
+      <td class="text-center">{{item.id}}</td>
+      <td class="text-center">{{item.nama}}</td>
+      <td class="text-center">{{item.kota}}</td>
+      <td class="flex justify-content-evenly">
+        <button pButton type="button" icon="pi pi-info-circle" label="Details" (click)="onDetails(item)" class="p-button-info"></button>
+        <button pButton type="button" icon="pi pi-user-edit" label="Edit" (click)="updateEvent.emit(item)" (click)="onProsesEdit()" class="p-button-help"></button>
+        <button pButton type="button" icon="pi pi-trash" label="Delete" (click)="onDelete(item.id)" class="p-button-danger"></button>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
