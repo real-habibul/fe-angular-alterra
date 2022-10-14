@@ -18,7 +18,8 @@ import { CarouselModule } from 'primeng/carousel';
 import { DetailPassangerComponent } from './Modul/passanger/detail-passanger/detail-passanger.component';
 import { AboutUsComponent } from './Modul/about-us/about-us.component';
 import { ArticleComponent } from './Modul/article/article.component';
-import {CardModule} from 'primeng/card';
+import { CardModule } from 'primeng/card';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import {CardModule} from 'primeng/card';
     ReactiveFormsModule,
     TableModule,
     CarouselModule,
-    CardModule
+    CardModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
